@@ -44,16 +44,12 @@ while running:
     for ball in population.balls:
         if pygame.sprite.collide_rect(wall, ball) or pygame.sprite.collide_rect(short_wall, ball):
             ball.isDead = True
-
         if not ball.isBest:
-            # draws white ball
             pygame.draw.circle(screen, [255, 255, 255], np.rint(ball.pos).astype(int), 5)
         else:
-            # draws green ball
             pygame.draw.circle(screen, [0, 255, 0], np.rint(ball.pos).astype(int), 8)
             fit_txt = ball.fitness
 
-    # Here is the evolution
     if population.is_dead():
         population.selection()
         population.mutate()
