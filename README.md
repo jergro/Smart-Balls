@@ -1,7 +1,16 @@
 # Smart-Balls
 Smart Rockets type simulation using a Genetic algorithm.
 
-play by running **main.py**
+## Setting up
+```console
+pip install -r requirements.txt
+```
 
-Inspired by:
+## Usage
+
+```console
+python3 src/main.py
+```
+
+### Inspired by:
 https://www.youtube.com/watch?v=VnwjxityDLQ&ab_channel=CodeBullet
